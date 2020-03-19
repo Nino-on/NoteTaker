@@ -1,15 +1,9 @@
-//needed for getting info and calling port
-var express = require("express");
-var path = require("path");
-var app = express();
-var PORT = process.env.PORT||3001;
-const fs = require("fs")
 
-/*var $noteTitle = $(".note-title");
+var $noteTitle = $(".note-title");
 var $noteText = $(".note-textarea");
 var $saveNoteBtn = $(".save-note");
 var $newNoteBtn = $(".new-note");
-var $noteList = $(".list-container .list-group");*/
+var $noteList = $(".list-container .list-group");
 
 // activeNote is used to keep track of the note in the textarea
 var activeNote = {};
@@ -139,7 +133,7 @@ var getAndRenderNotes = function() {
   });
 };
 
-/*$saveNoteBtn.on("click", handleNoteSave);
+$saveNoteBtn.on("click", handleNoteSave);
 $noteList.on("click", ".list-group-item", handleNoteView);
 $newNoteBtn.on("click", handleNewNoteView);
 $noteList.on("click", ".delete-note", handleNoteDelete);
@@ -147,7 +141,4 @@ $noteTitle.on("keyup", handleRenderSaveBtn);
 $noteText.on("keyup", handleRenderSaveBtn);
 
 // Gets and renders the initial list of notes
-getAndRenderNotes(); */
-app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
-});
+getAndRenderNotes(); 
